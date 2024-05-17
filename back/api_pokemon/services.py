@@ -28,9 +28,8 @@ class PokemonApiService:
                 stat_data["stat"]["name"]: stat_data["base_stat"]
                 for stat_data in pokemon_data["stats"]
             },
-            "height": pokemon_data["height"] / 10,  # Convertir de decímetros a metros
-            "weight": pokemon_data["weight"]
-            / 10,  # Convertir de hectogramos a kilogramos
+            "height": pokemon_data["height"] / 10,
+            "weight": pokemon_data["weight"] / 10,
             "sprite_url": pokemon_data["sprites"]["front_default"],
         }
         return processed_data

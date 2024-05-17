@@ -29,12 +29,12 @@ const PokemonListItem: FC<PokemonListItemProps> = ({ botones, pokemon }) => {
 				<div className="flex flex-col gap-y-2">
 					<div>
 						<h5 className="font-bold">Tipos</h5>
-						<p>{pokemon.types.join(', ')}</p>
+						<p>{pokemon.types!.join(', ')}</p>
 					</div>
 
 					<div>
 						<h5 className="font-bold">Abilidades</h5>
-						<p>{pokemon.abilities.join(', ')}</p>
+						<p>{pokemon.abilities!.join(', ')}</p>
 					</div>
 				</div>
 			</div>
